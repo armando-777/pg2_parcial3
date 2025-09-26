@@ -6,7 +6,7 @@ P. Academico de Programación.
 
 
 
-* Instalación desde PyPI 
+* Instalación desde testPyPI 
 
 ```bash
 pip install -i https://test.pypi.org/simple/ Armando-Clemente-pg2-tecba==0.0.2
