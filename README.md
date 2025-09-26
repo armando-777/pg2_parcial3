@@ -9,7 +9,7 @@ P. Academico de Programación.
 * Instalación desde PyPI 
 
 ```bash
-https://test.pypi.org/project/Armando-Clemente-pg2-tecba/0.0.1/
+pip install -i https://test.pypi.org/simple/ Armando-Clemente-pg2-tecba==0.0.2
 ``` 
 
 * Instalación desde código fuente
@@ -28,6 +28,15 @@ venv\Scripts\activate     # Windows
 # Instalar dependencias (ninguna requerida para funcionamiento básico)
 pip install -r requirements.txt  # Solo para desarrollo/testing
 ```
+
+# tests
+
+```bash
+
+python -m pytest tests/test_persona.py -v
+
+```
+
 # interfaces expuestas para la clase principal del módulo core.
 Interfaces expuestas – Clase Persona (módulo core)
 

@@ -1,14 +1,13 @@
-# src/Armando_Clemente_pg2_tecba/core.py
 from .validators import ValidadorDatosPersonales, ValidadorDatosContacto
 
 class Persona:
-    def __init__(self):
-        self._nombre = None
-        self._edad = None
-        self._documento = None
-        self._email = None
-        self._celular = None
-        self._direccion = None
+    def __init__(self, nombre=None, edad=None, documento=None, email=None, celular=None, direccion=None):
+        self._nombre = nombre
+        self._edad = edad
+        self._documento = documento
+        self._email = email
+        self._celular = celular
+        self._direccion = direccion
 
         self._val_personales = ValidadorDatosPersonales()
         self._val_contacto = ValidadorDatosContacto()
@@ -57,7 +56,6 @@ class Persona:
             raise ValueError("Dirección inválida")
         return self
 
-    
     def build(self):
         return {
             "nombre": self._nombre,

@@ -1,4 +1,4 @@
-# src/Armando_Clemente_pg2_tecba/validators.py
+
 import re
 
 class ValidadorBase:
